@@ -1,6 +1,6 @@
 "use client";
-import { ThreeDCardDemo } from "../../components/card";
-import Footer from "../../components/footer";
+import { ThreeDCardDemo } from "../components/card";
+import Footer from "../components/footer";
 import Navbar from "@/app/components/navbar";
 
 export default function FacultyTeam() {
