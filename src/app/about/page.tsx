@@ -4,6 +4,7 @@ import Footer from '@/app/components/footer';
 import Navbar from '@/app/components/navbar';
 import DirectorMessage from '@/app/components/message';
 import CountdownTimer from '@/app/components/countdown';
+import Image from 'next/image';
 
 const judges = [
     {
@@ -100,7 +101,7 @@ export default function Overview() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {judges.map((judge, index) => (
                             <div key={index} className="text-center">
-                                <img
+                                <Image
                                     src={judge.image}
                                     alt={judge.name}
                                     className="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
