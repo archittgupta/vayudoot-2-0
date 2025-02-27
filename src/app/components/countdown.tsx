@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 export default function CountdownTimer() {
     const [timeLeft, setTimeLeft] = useState({
@@ -8,54 +8,52 @@ export default function CountdownTimer() {
         hours: 0,
         minutes: 0,
         seconds: 0,
-    })
-    const [isExpired, setIsExpired] = useState(false)
+    });
+    const [isExpired, setIsExpired] = useState(false);
 
     useEffect(() => {
         const second = 1000,
             minute = second * 60,
             hour = minute * 60,
-            day = hour * 24
+            day = hour * 24;
 
         const calculateBirthday = () => {
-            let today = new Date(),
-                dd = String(today.getDate()).padStart(2, "0"),
-                mm = String(today.getMonth() + 1).padStart(2, "0"),
-                yyyy = today.getFullYear(),
-                nextYear = yyyy + 1,
-                dayMonth = "04-05", // Use ISO-compliant format
-                birthday = `${yyyy}-${dayMonth}`
+            const today = new Date();
+            const dd = String(today.getDate()).padStart(2, "0");
+            const mm = String(today.getMonth() + 1).padStart(2, "0");
+            const yyyy = today.getFullYear();
+            const nextYear = yyyy + 1;
+            const dayMonth = "04-05"; // Use ISO format
+            let birthday = new Date(`${yyyy}-${dayMonth}`);
 
-            today = new Date(`${yyyy}-${mm}-${dd}`) // Ensure today is a Date object
-
-            if (today.getTime() > new Date(birthday).getTime()) {
-                birthday = `${nextYear}-${dayMonth}`
+            if (today.getTime() > birthday.getTime()) {
+                birthday = new Date(`${nextYear}-${dayMonth}`);
             }
 
-            return new Date(birthday).getTime()
-        }
+            return birthday.getTime();
+        };
 
-        const countDown = calculateBirthday()
+        const countDown = calculateBirthday();
 
-        const interval = setInterval(() => {
-            const now = new Date().getTime()
-            const distance = countDown - now
+        const intervalId = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countDown - now;
 
             if (distance < 0) {
-                clearInterval(interval)
-                setIsExpired(true)
+                clearInterval(intervalId);
+                setIsExpired(true);
             } else {
                 setTimeLeft({
                     days: Math.floor(distance / day),
                     hours: Math.floor((distance % day) / hour),
                     minutes: Math.floor((distance % hour) / minute),
                     seconds: Math.floor((distance % minute) / second),
-                })
+                });
             }
-        }, 1000)
+        }, 1000);
 
-        return () => clearInterval(interval)
-    }, [])
+        return () => clearInterval(intervalId);
+    }, []);
 
     return (
         <div className="flex flex-col items-center justify-center min-h-[400px] bg-black text-white p-4 sm:p-6 md:p-8">
@@ -97,5 +95,5 @@ export default function CountdownTimer() {
                 </div>
             )}
         </div>
-    )
+    );
 }

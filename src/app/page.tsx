@@ -2,7 +2,7 @@
 
 import { Backdrop } from "./components/backdrop";
 import CountdownTimer from "./components/countdown";
-import React, { useState } from "react";
+import React from "react";
 import Roadmap from "./components/roadmap";
 
 import Footer from "./components/footer";
@@ -18,8 +18,9 @@ export default function AuroraBackgroundDemo() {
        
    
     <Backdrop/>
-    <Roadmap/>
     <CountdownTimer/>
+    <Roadmap/>
+    
     <Footer/>
     
   

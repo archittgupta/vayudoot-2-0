@@ -11,6 +11,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        league: ["League Gothic", "sans-serif"],
+      },
       animation: {
         aurora: "aurora 60s linear infinite",
       },

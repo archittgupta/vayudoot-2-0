@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Rss } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 const navigation = [
     { name: 'Team', href: '/components/overview' },
     { name: 'Partners', href: '/components/sponsers' },
