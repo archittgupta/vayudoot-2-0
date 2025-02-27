@@ -52,6 +52,7 @@ export const AuroraBackground = ({
             
           </div>
         <Navbar></Navbar>
+        
 
         </div>
         
