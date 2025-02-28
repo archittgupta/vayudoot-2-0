@@ -5,6 +5,7 @@ export function Backdrop(){
 
     return(
 <AuroraBackground>
+  <div className="z-10">
 
 
       <motion.div
@@ -34,6 +35,7 @@ export function Backdrop(){
         </button>
         </div>
       </motion.div>
+      </div>
     </AuroraBackground>
     );
 }
