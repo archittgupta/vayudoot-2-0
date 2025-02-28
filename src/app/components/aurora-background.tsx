@@ -24,7 +24,9 @@ export const AuroraBackground = ({
         )}
         {...props}
         
-      ><Navbar/>
+      >
+        <Navbar/>
+        
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div
             //   I'm sorry but this is what peak developer performance looks like // trigger warning

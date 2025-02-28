@@ -1,12 +1,12 @@
 import { Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 
 const navigation = [
-    { name: 'Team', href: '/components/overview' },
-    { name: 'Partners', href: '/components/sponsers' },
-    { name: 'Overview', href: '/components/guidelines' },
-    { name: 'Sponsors', href: '/components/news' },
-    { name: 'About', href: '/components/faq' },
-    { name: 'Home', href: '/components/faq' }
+    { name: 'Team', href: '/team' },
+    { name: 'Partners', href: '/partners' },
+    { name: 'Guidelines', href: '/guidelines' },
+    { name: 'Sponsors', href: '/sponsors' },
+    { name: 'About', href: '/about' },
+    { name: 'Home', href: '/' }
 ];
 
 const legalLinks = [
@@ -15,10 +15,10 @@ const legalLinks = [
 ];
 
 const socialLinks = [
-    { name: 'GitHub', icon: Github, href: '#' },  // ✅ Replaced Facebook with GitHub
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/archittgupta/vayudoot-2-0' },  // ✅ Replaced Facebook with GitHub
+    { name: 'Twitter', icon: Twitter, href: 'http://twitter.com/' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/vayudoot_abesec?utm_source=qr&igsh=MWJ5cXFrYjNjc2UxOQ==' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF5ckQMCpHLxQAAAZVOAI2wmff3W_Fr6AKTbNz15w8J9irHPQwHCbe8VNEvCMMPiCr7Ds4cS5ScB3PfEivj6ueq5Q5bmdDuRlyWKkmeCLSUCKVMC4Qth1tu0PPKBBiwY13OAmg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Farchit-gupta-973b93261' },
 ];
 
 export default function Footer() {
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
 
                 {/* ✅ Legal Links - Stacked on Mobile, Inline on Larger Screens */}
-                <div className="flex flex-col sm:flex-row justify-center gap-4 text-xs sm:text-sm text-gray-400 mb-6">
+                <div className="flex flex-row sm:flex-row justify-center gap-4 text-xs sm:text-sm text-gray-400 mb-6">
                     {legalLinks.map((item) => (
                         <a key={item.name} href={item.href} className="hover:text-gray-300 transition-colors">
                             {item.name}

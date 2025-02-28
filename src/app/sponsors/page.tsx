@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Navbar from "@/app/components/navbar";
+import Footer from "../components/footer";
 
 const Sponsor = () => {
   return (<div>
@@ -24,6 +25,8 @@ const Sponsor = () => {
         </Link>
       </div>
     </div>
+    <Footer></Footer>
+    
     </div>
   );
 };
