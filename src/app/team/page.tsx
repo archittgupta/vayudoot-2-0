@@ -14,7 +14,7 @@ export default function FacultyTeam() {
       {/* Add padding to prevent content overlap */}
       <div className="pt-32 min-h-screen bg-black dark:bg-gray-950 py-4 px-4">
         {/* Heading */}
-        <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-100 dark:text-white mb-24">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-100 dark:text-white mb-24">
           Faculty Coordinators of Vayudoot
         </h1>
 
