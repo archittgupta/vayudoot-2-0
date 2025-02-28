@@ -61,7 +61,7 @@ export default function Overview() {
 
             {/* How to Win Section */}
             <section className="w-full px-6 py-12">
-                <h2 className="text-4xl font-bold text-white">HOW TO WIN</h2>
+                <h2 className="text-4xl font-bold text-white text-center">HOW TO WIN</h2>
                 <p className="text-lg text-gray-300 mt-6 leading-relaxed">
                     The winning team will develop novel technologies to rapidly and comprehensively adapt to the designed hurdles and challenges provided.
                     Teams must pass all hurdles and conquer challenges in record time while demonstrating the scalability of their technology.
