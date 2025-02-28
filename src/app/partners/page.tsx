@@ -67,6 +67,7 @@ export default function Sponsor() {
       </section>
       
       {/* Footer */}
+      <div className='h-10'></div>
       <Footer />
     </main>
   );

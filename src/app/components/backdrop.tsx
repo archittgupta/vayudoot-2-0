@@ -1,6 +1,6 @@
 import { AuroraBackground } from "@/app/components/aurora-background";
 import { motion } from "framer-motion";
-import Navbar from "./navbar";
+
 
 export function Backdrop(){
 
