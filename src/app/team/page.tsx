@@ -7,7 +7,7 @@ export default function FacultyTeam() {
   return (
     <div>
       {/* Navbar fixed on top */}
-      <div className="fixed top-0 left-0 w-full z-50">
+      <div className="top-0 left-0 w-full z-50">
         <Navbar />
       </div>
 
