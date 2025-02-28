@@ -1,11 +1,13 @@
 import { AuroraBackground } from "@/app/components/aurora-background";
 import { motion } from "framer-motion";
+import Navbar from "./navbar";
 
 export function Backdrop(){
 
     return(
 <AuroraBackground>
   <div className="z-10">
+  
 
 
       <motion.div
@@ -16,6 +18,7 @@ export function Backdrop(){
           duration: 0.8,
           ease: "easeInOut",
         }}
+      
         className="relative flex flex-col gap-4 items-center justify-center px-4"
         
       >

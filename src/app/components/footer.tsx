@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 
                 {/* ✅ Main Navigation - Responsive */}
-                <nav className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm md:text-base mb-8">
+                <nav className="flex flex-wrap justify-center gap-6 sm:gap-6 text-sm md:text-base mb-8">
                     {navigation.map((item) => (
                         <a key={item.name} href={item.href} className="hover:text-gray-300 transition-colors">
                             {item.name}
@@ -39,7 +39,7 @@ export default function Footer() {
                 <div className="border-t border-gray-800 mb-8 mx-auto w-full max-w-4xl"></div>
 
                 {/* ✅ Social Links - Responsive */}
-                <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-8">
+                <div className="flex flex-wrap justify-center gap-6 md:gap-6 mb-8">
                     {socialLinks.map((item) => {
                         const Icon = item.icon;
                         return (

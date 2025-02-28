@@ -14,7 +14,7 @@ export default function AuroraBackgroundDemo() {
   return (
 
     <div>
-        {/* <Navbar /> */}
+        {/* <Navbar /> the navbar is placed in aurora-background*/}
        
    
     <Backdrop/>
